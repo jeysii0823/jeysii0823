@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+    border:15px ridge white;
+    border-width: 10px;
+    height: 500px;
+    width: 40%;
+    margin-left: 450px;
+    margin-top: 150px;
+    text-align: center;
+}
+div.container {
+    width:100%;
+    height:100%;
+}
+
+div{
+    text-align: center;
+}
+p {
+    color:white;
+    padding: 25px 50px 25px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 39px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+button{
+    color: black;
+    background-color: rgb(96, 255, 28);
+    border-radius: 16%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 30x;
+}
+p1{
+    font-size: 12px;
+    color: green;
+    background-color: black;
+    margin-top: 1500px;
+    text-align: center;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=320' />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ehehheehehehhehe</title>
+<body>
+    <div class="ost-multi-header">
+    <div class="w3-container w3-center w3-animate-zoom">
+    <div class="wrapper">
+        <div class="container">
+            <p id="question"><span>mag sstream kana po ba?</span></p>
+            <button class="btn" id="Yes"><b>yes</b></button>
+            <button class="btn" id="Nope"><b>nope</b></button>
+        </div>
+    </div> 
+</body>
+<script>
+    const noBtn = document.getElementById('Nope');
+    const yesBtn = document.getElementById('Yes');
+    const ques = document.getElementById('question');
+    let btn = document.getElementById('btn');
+        let position;
+        noBtn.addEventListener('mouseover',() =>{
+        let rand = Math.floor(Math.random() * (500 - 100) + 1);
+        let rand2 = Math.floor(Math.random() * (-300 - 100) + 1);
+        noBtn.style.transform = "translate("+rand+"px,"+rand2+"px)";
+        });
+    yesBtn.addEventListener("click",()=>{
+        ques.innerHTML = "mag stream kana po please, gusto ko na po maglaro w u ^_^"
+    })
+</script>
+<div>
+    <p1>Created by jeysii pogi</p1>
+</div>
+</html>
